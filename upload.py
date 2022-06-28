@@ -19,6 +19,9 @@ bucket = os.getenv('BUCKET', 'cor-local')
 
 print(bucket)
 
+company_id = os.getenv('COMPANY_ID', 000)
+print("company_id: " + company_id) 
+
 object = s3.Object(bucket, 'poc-python/test_python.txt')
 result = object.put(Body=txt_data)
 

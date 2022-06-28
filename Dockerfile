@@ -21,6 +21,8 @@ RUN apt-get update && \
     ACCEPT_EULA=Y apt-get install -y msodbcsql18 && \
     ACCEPT_EULA=Y apt-get install -y mssql-tools 
 
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
 
 COPY . .
 

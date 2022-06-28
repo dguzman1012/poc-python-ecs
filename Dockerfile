@@ -24,4 +24,4 @@ RUN apt-get update && \
 
 COPY . .
 
-CMD [ "python3", "./upload.py" ]
+# CMD [ "python3", "./upload.py" ]
